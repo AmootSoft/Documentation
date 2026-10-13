@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "documentationId": 32,
+  "entrypointPath": "products/payamak/general/bts-request-check-ready--32/v1-0/README.md",
+  "files": [
+    {
+      "path": "products/payamak/general/bts-request-check-ready--32/v1-0/README.md",
+      "sha256": "9c82345d3a2e204e49a1544d0fc0bcf23a2688b0ef6ef8e4f9b9246204312863",
+      "blobSha": "7917bdaa299adda71139d3a54b1b29e534ddae36"
+    },
+    {
+      "path": "products/payamak/general/bts-request-check-ready--32/v1-0/endpoints/BTSRequestCheckReady--31.md",
+      "sha256": "e931bb591ea6a89f43ba3643708c192d0826258033b69a6ba96d924ea7ba2f27",
+      "blobSha": "22576a6a98435f7b39bc0228fbf62a14147dab65"
+    },
+    {
+      "path": "products/payamak/general/bts-request-check-ready--32/v1-0/openapi.json",
+      "sha256": "0aa2b90cf014b79244cf3a79dfa5ec40f53dc7179f656c7709f619d4d2d99d13",
+      "blobSha": "62d6aca1127449ebc21b8128385bb35847edb5bb"
+    }
+  ]
+}

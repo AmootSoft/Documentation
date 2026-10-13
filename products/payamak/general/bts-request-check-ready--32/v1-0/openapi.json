@@ -1,0 +1,52 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "بررسی وضعیت آماده بودن درخواست BTS",
+    "version": "1.0",
+    "description": "با این متد میتوانید وضعیت آماده بودن درخواست BTS برای ارسال را دریافت کنید"
+  },
+  "paths": {
+    "/rest/BTSRequestCheckReady": {
+      "post": {
+        "operationId": "hubDocumentation32Endpoint31",
+        "summary": "با این متد میتوانید وضعیت آماده بودن درخواست BTS برای ارسال را دریافت کنید",
+        "description": null,
+        "responses": {
+          "default": {
+            "description": "Response is not documented in Hub yet."
+          }
+        },
+        "parameters": [
+          {
+            "name": "Token",
+            "in": "header",
+            "required": true,
+            "description": "توکن ثبت شده در سامانه پیامک آموت",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "BTSRequestID": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                },
+                "required": [
+                  "BTSRequestID"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
