@@ -1,0 +1,66 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "وب سرویس ارسال BTS",
+    "version": "1.0",
+    "description": "با استفاده از این متد می‌‍توانید بعد از آماده بودن آن ، یکبار ارسال انجام دهید"
+  },
+  "paths": {
+    "/rest/BTSRequestSend": {
+      "post": {
+        "operationId": "hubDocumentation33Endpoint32",
+        "summary": "با استفاده از این متد می‌‍توانید بعد از آماده بودن آن ، یکبار ارسال انجام دهید",
+        "description": null,
+        "responses": {
+          "default": {
+            "description": "Response is not documented in Hub yet."
+          }
+        },
+        "parameters": [
+          {
+            "name": "Token",
+            "in": "header",
+            "required": true,
+            "description": "توکن ثبت شده در سامانه پیامک آموت",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "BTSRequestID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "SMSMessageText": {
+                    "type": "string"
+                  },
+                  "SendCount": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "SendDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                },
+                "required": [
+                  "BTSRequestID",
+                  "SMSMessageText",
+                  "SendDateTime",
+                  "SendCount"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
